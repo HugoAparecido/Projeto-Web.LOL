@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    background-color: #F6F6F6;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.52px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+body strong {
+    font-weight: 600;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/* header */
+header {
+    width: 100vw;
+    margin-bottom: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* nav */
+header>nav>ul {
+    height: 100px;
+    width: calc(100vw);
+    list-style: none;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+header>nav>ul>.menu-responsivo {
+    height: 13px;
+    display: none;
+}
+
+/* Logo */
+header>nav>ul>.logo {
+    width: 74px;
+}
+
+header>nav>ul>li>.link-pagina-nav {
+    color: #202020;
+    text-decoration: none;
+}
+
+/* Barra de Pesquisa */
+header>nav>ul>li:nth-child(5) {
+    width: 100vw;
+    flex-basis: 100px;
+    max-width: 530px;
+    flex-grow: 3;
+    flex-shrink: 1;
+}
+
+header>nav>ul>li>form.barra-de-pesquisa {
+    position: relative;
+}
+
+header>nav>ul>li>form>input.item-a-pesquisar {
+    border: 0;
+    width: 100%;
+    height: 40px;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+header>nav>ul>li>form>.item-a-pesquisar::placeholder,
+header>nav>ul>li>ul>li>.informacoes>.meus-pedidos>a {
+    color: rgba(32, 32, 32, 0.6);
+    text-decoration: none;
+}
+
+header>nav>ul>li>form>.botao-pesquisar {
+    width: 10px;
+    cursor: pointer;
+}
+
+header>nav>ul>li>form>button {
+    cursor: pointer;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #740303;
+    box-shadow: 0px 10px 15px 0px #E851284D;
+    border-radius: 100%;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+/* Perfil */
+header>nav>ul>li>.perfil {
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+header>nav>ul>li>.perfil .botao-pesquisar-responsivo {
+    display: none;
+}
+
+.carrinho {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 100%;
+    background-color: rgba(116, 3, 3, 0.1);
+}
+
+.carrinho img {
+    width: 15px;
+}
+
+.foto_perfil {
+    width: 40px;
+    cursor: pointer;
+}
+
+.informacoes {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+.perfil p {
+    display: block;
+}
+
+header>picture>img,
+header>picture>source {
+    width: 100vw;
+}
+
+/* main */
+main {
+    width: 100vw;
+    max-width: 1200px;
+    flex-direction: column;
+}
+
+/* section */
+section {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    padding: 15px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+}
+
+.banner-vitrine {
+    max-width: 220px;
+    flex-basis: 170px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+section .banner-secao {
+    width: 100%;
+    min-width: 170px;
+}
+
+section .banner-secao-mobile {
+    display: none;
+}
+
+section .produtos {
+    gap: 5px;
+    flex-wrap: nowrap;
+    flex-grow: 4;
+}
+
+section .produtos article {
+    cursor: pointer;
+    max-width: 230px;
+    flex-basis: 170px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    padding: 10px;
+    position: relative;
+    border-radius: 20px;
+}
+
+section .produtos article:active {
+    background-color: rgba(116, 3, 3, 0.05);
+
+}
+
+section article .imagem-produto {
+    width: 100%;
+    position: relative;
+}
+
+section article .imagem-produto img {
+    width: 100%;
+}
+
+section article .imagem-produto .detalhes {
+    width: 100%;
+    background-color: #740303;
+    border: 0;
+    height: 40px;
+    text-align: center;
+    border-radius: 100px;
+    display: none;
+    position: absolute;
+}
+
+section article .imagem-produto .detalhes a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section article .imagem-produto:hover .detalhes {
+    display: block;
+    bottom: 0;
+}
+
+section article .estrelas {
+    margin-top: 10px;
+}
+
+section article .descricao {
+    width: 150px;
+    height: 30px;
+    margin: 5px 0;
+}
+
+section article>button>a>img {
+    width: 15px;
+}
+
+section article>button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(232, 81, 40, 0.1);
+}
+
+/* aside */
+aside {
+    width: 100%;
+    margin: 40px 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+aside article {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+aside img {
+    width: 100%;
+}
+
+/* footer */
+footer {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 12px;
+    margin-top: 85px;
+}
+
+footer img {
+    width: 95px;
+    margin-bottom: 5px;
+}
+
+footer p small {
+    color: rgba(32, 32, 32, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+
+    /* nav */
+    nav {
+        min-height: 40px;
+    }
+
+    nav .link-pagina-nav-li,
+    .form-li {
+        display: none;
+        margin: 0;
+    }
+
+    nav .menu-responsivo {
+        display: block;
+        cursor: pointer;
+    }
+
+    header>nav>ul>li>.perfil .botao-pesquisar-responsivo {
+        cursor: pointer;
+        display: block;
+        border: 0;
+        width: 40px;
+        height: 40px;
+        background-color: #740303;
+        box-shadow: 0px 10px 15px 0px #E851284D;
+        border-radius: 100%;
+    }
+
+    .botao-pesquisar-responsivo img {
+        width: 16px;
+    }
+
+    .informacoes {
+        display: none;
+    }
+
+    /* section */
+    section {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    section .banner-secao {
+        display: none;
+    }
+
+    section .banner-secao-mobile {
+        display: block;
+        width: calc(100vw - 20px);
+        margin-bottom: 10px;
+    }
+
+    section .produtos {
+        gap: 10px;
+        flex-basis: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    section .produtos article {
+        background-color: rgba(116, 3, 3, 0.05);
+        width: 20%;
+        min-width: 170px;
+    }
+
+    section div article button {
+        display: none;
+    }
+
+    aside {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    aside img {
+        width: 100vw;
+    }
+}
