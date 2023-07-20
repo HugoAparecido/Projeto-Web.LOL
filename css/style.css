@@ -198,7 +198,6 @@ section .produtos {
 }
 
 section .produtos article {
-    cursor: pointer;
     max-width: 230px;
     flex-basis: 170px;
     flex-shrink: 1;
@@ -223,6 +222,7 @@ section article .imagem-produto img {
 
 section article .imagem-produto .detalhes {
     width: 100%;
+    cursor: pointer;
     background-color: #740303;
     border: 0;
     height: 40px;
