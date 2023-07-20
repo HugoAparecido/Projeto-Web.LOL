@@ -210,7 +210,6 @@ section .produtos article {
 
 section .produtos article:active {
     background-color: rgba(116, 3, 3, 0.05);
-
 }
 
 section article .imagem-produto {
@@ -364,7 +363,7 @@ footer p small {
     }
 
     section .produtos {
-        overflow-x: hidden;
+        overflow-x: scroll;
         gap: 10px;
         flex-basis: 100%;
         flex-wrap: nowrap;
@@ -376,6 +375,11 @@ footer p small {
         background-color: rgba(116, 3, 3, 0.05);
         width: 20%;
         min-width: 170px;
+    }
+
+    section article .imagem-produto .detalhes {
+        display: block;
+        bottom: 0;
     }
 
     section div article button {
