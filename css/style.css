@@ -49,8 +49,7 @@ header>nav>ul {
     gap: 10px;
 }
 
-header>nav>ul>.menu-responsivo {
-    height: 13px;
+header>nav>ul .menu-responsivo-li {
     display: none;
 }
 
@@ -65,7 +64,7 @@ header>nav>ul>li>.link-pagina-nav {
 }
 
 /* Barra de Pesquisa */
-header>nav>ul>li:nth-child(5) {
+header>nav>ul>li.form-li {
     width: 100vw;
     flex-basis: 100px;
     max-width: 530px;
@@ -321,9 +320,15 @@ footer p small {
         margin: 0;
     }
 
-    nav .menu-responsivo {
+    header>nav>ul .menu-responsivo-li {
         display: block;
+        width: 30px;
         cursor: pointer;
+    }
+
+    header>nav>ul .menu-responsivo-li img {
+        display: block;
+        width: 100%;
     }
 
     header>nav>ul>li>.perfil .botao-pesquisar-responsivo {
@@ -363,11 +368,10 @@ footer p small {
     }
 
     section .produtos {
-        overflow-x: scroll;
+        margin: 0 10px;
+        overflow-x: hidden;
         gap: 10px;
-        flex-basis: 100%;
         flex-wrap: nowrap;
-        justify-content: space-between;
         margin-bottom: 20px;
     }
 
@@ -375,6 +379,10 @@ footer p small {
         background-color: rgba(116, 3, 3, 0.05);
         width: 20%;
         min-width: 170px;
+    }
+
+    section .produtos article:nth-last-child(1) {
+        display: none;
     }
 
     section article .imagem-produto .detalhes {
