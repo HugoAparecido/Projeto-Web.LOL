@@ -359,11 +359,12 @@ footer p small {
 
     section .banner-secao-mobile {
         display: block;
-        width: calc(100vw - 20px);
+        width: 100vw;
         margin-bottom: 10px;
     }
 
     section .produtos {
+        overflow-x: hidden;
         gap: 10px;
         flex-basis: 100%;
         flex-wrap: nowrap;
