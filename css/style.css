@@ -40,7 +40,7 @@ header {
 /* nav */
 header>nav>ul {
     height: 100px;
-    width: calc(100vw);
+    width: 100vw;
     list-style: none;
     max-width: 1200px;
     align-items: center;
@@ -61,6 +61,10 @@ header>nav>ul>.logo {
 header>nav>ul>li>.link-pagina-nav {
     color: #202020;
     text-decoration: none;
+}
+
+header>nav>ul>li:hover>.link-pagina-nav {
+    text-decoration: underline;
 }
 
 /* Barra de Pesquisa */
@@ -116,11 +120,11 @@ header>nav>ul>li>.perfil {
     gap: 10px;
 }
 
-header>nav>ul>li>.perfil .botao-pesquisar-responsivo {
+header>nav>ul>li>.perfil>li>.botao-pesquisar-responsivo {
     display: none;
 }
 
-.carrinho {
+header>nav>ul>li>.perfil>li>.carrinho {
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -129,24 +133,33 @@ header>nav>ul>li>.perfil .botao-pesquisar-responsivo {
     background-color: rgba(116, 3, 3, 0.1);
 }
 
-.carrinho img {
+header>nav>ul>li>.perfil>li>.carrinho:hover {
+    background-color: rgba(116, 3, 3, 0.5);
+}
+
+header>nav>ul>li>.perfil>li>.carrinho>a>img {
     width: 15px;
 }
 
-.foto_perfil {
+
+header>nav>ul>li>.perfil>li>.foto_perfil {
     width: 40px;
     cursor: pointer;
 }
 
-.informacoes {
+header>nav>ul>li>.perfil>li>.informacoes {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     margin-right: 20px;
 }
 
-.perfil p {
+header>nav>ul>li>.perfil>li>.informacoes>p {
     display: block;
+}
+
+header>nav>ul>li>ul>li>.informacoes>.meus-pedidos:hover>a {
+    text-decoration: underline;
 }
 
 header>picture>img,
@@ -162,7 +175,7 @@ main {
 }
 
 /* section */
-section {
+main>section {
     background-color: #fff;
     border-radius: 20px;
     width: 100%;
@@ -206,7 +219,7 @@ section .produtos article {
     border-radius: 20px;
 }
 
-section .produtos article:active {
+section .produtos article:hover {
     background-color: rgba(116, 3, 3, 0.05);
 }
 
@@ -228,7 +241,12 @@ section article .imagem-produto .detalhes {
     text-align: center;
     border-radius: 100px;
     display: none;
+    transition: 1s;
     position: absolute;
+}
+
+section article .imagem-produto .detalhes:hover {
+    letter-spacing: 4px;
 }
 
 section article .imagem-produto .detalhes a {
@@ -256,6 +274,7 @@ section article>button>a>img {
 }
 
 section article>button {
+    cursor: pointer;
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -266,6 +285,10 @@ section article>button {
     align-items: center;
     justify-content: center;
     background-color: rgba(232, 81, 40, 0.1);
+}
+
+section article>button:hover {
+    background-color: rgba(232, 81, 40, 0.5);
 }
 
 /* aside */
@@ -312,6 +335,7 @@ footer p small {
     /* nav */
     nav {
         min-height: 40px;
+        position: relative;
     }
 
     nav .link-pagina-nav-li,
@@ -329,6 +353,34 @@ footer p small {
     header>nav>ul .menu-responsivo-li img {
         display: block;
         width: 100%;
+    }
+/* Exibição de conteúdos escondidos */
+    nav .link-pagina-nav-li.ativo {
+        width: 100vw;
+        display: block;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        position: absolute;
+        font-size: 20px;
+    }
+
+    nav .link-pagina-nav-li1.ativo {
+        top: 80px;
+        background-color: #F6F6F6;
+    }
+
+    nav .link-pagina-nav-li2.ativo {
+        top: 110px;
+        background-color: #F6F6F6;
+        padding-bottom: 10px;
+        border-bottom: 3px solid black;
+    }
+
+    .form-li.ativo {
+        top: 80px;
+        display: block;
+        width: 100%;
+        position: absolute;
     }
 
     header>nav>ul>li>.perfil .botao-pesquisar-responsivo {
