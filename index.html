@@ -76,8 +76,9 @@
             </article>
             <!-- Produto 1 -->
             <div class="produtos flex-item flex-container">
-                <article class="flex-item">
-                    <div class="imagem-produto">
+                <article class="flex-item" onclick="TirarCarrinho1()" onmouseout="ColocarCarrinho1()">
+                    <div class="imagem-produto" id="produto1" onmouseover="TirarCarrinho1()"
+                        onmouseout="ColocarCarrinho1()">
                         <img src="imagens/tristana.png" alt="Tristana" />
                         <button class="detalhes"><a href="#"><strong>Ver detalhes</strong></a></button>
                     </div>
@@ -90,11 +91,13 @@
                     </div>
                     <p class="descricao">Mis Fortune Fliperama Tiro fofo</p>
                     <p class="preco"><strong>R$ 1,00</strong></p>
-                    <button><a href="#"><img src="imagens/icones/icon-carrinho.svg" alt="Carrinho" /></a></button>
+                    <button id="carrinho1"><a href="#"><img src="imagens/icones/icon-carrinho.svg"
+                                alt="Carrinho" /></a></button>
                 </article>
                 <!-- Produto 2 -->
-                <article class="flex-item">
-                    <div class="imagem-produto">
+                <article class="flex-item" onclick="TirarCarrinho2()" onmouseout="ColocarCarrinho2()">
+                    <div class="imagem-produto" id="produto2" onmouseover="TirarCarrinho2()"
+                        onmouseout="ColocarCarrinho2()">
                         <img src="imagens/miss-fortune.png" alt="Miss-Fortune" />
                         <button class="detalhes"><a href="#"><strong>Ver detalhes</strong></a></button>
                     </div>
@@ -107,11 +110,13 @@
                     </div>
                     <p class="descricao">Tristana do mal</p>
                     <p class="preco"><strong>R$ 1,00</strong></p>
-                    <button><a href="#"><img src="imagens/icones/icon-carrinho.svg" alt="Carrinho" /></a></button>
+                    <button id="carrinho2"><a href="#"><img src="imagens/icones/icon-carrinho.svg"
+                                alt="Carrinho" /></a></button>
                 </article>
                 <!-- Produto 3 -->
-                <article class="flex-item">
-                    <div class="imagem-produto">
+                <article class="flex-item" onclick="TirarCarrinho3()" onmouseout="ColocarCarrinho3()">
+                    <div class="imagem-produto" id="produto3" onmouseover="TirarCarrinho3()"
+                        onmouseout="ColocarCarrinho3()">
                         <img src="imagens/vayne.png" alt="Vayne" />
                         <button class="detalhes"><a href="#"><strong>Ver detalhes</strong></a></button>
                     </div>
@@ -124,11 +129,13 @@
                     </div>
                     <p class="descricao">Vayne morgeco de batalha</p>
                     <p class="preco"><strong>R$ 1,00</strong></p>
-                    <button><a href="#"><img src="imagens/icones/icon-carrinho.svg" alt="Carrinho" /></a></button>
+                    <button id="carrinho3"><a href="#"><img src="imagens/icones/icon-carrinho.svg"
+                                alt="Carrinho" /></a></button>
                 </article>
                 <!-- Produto 4 -->
-                <article class="flex-item">
-                    <div class="imagem-produto">
+                <article class="flex-item" onclick="TirarCarrinho4()" onmouseout="ColocarCarrinho4()">
+                    <div class="imagem-produto" id="produto4" onmouseover="TirarCarrinho4()"
+                        onmouseout="ColocarCarrinho4()">
                         <img src="imagens/varus.png" alt="Varus" />
                         <button class="detalhes"><a href="#"><strong>Ver detalhes</strong></a></button>
                     </div>
@@ -141,7 +148,8 @@
                     </div>
                     <p class="descricao">Varus caçador cósmico - Flechada</p>
                     <p class="preco"><strong>R$ 1,00</strong></p>
-                    <button><a href="#"><img src="imagens/icones/icon-carrinho.svg" alt="Carrinho" /></a></button>
+                    <button id="carrinho4"><a href="#"><img src="imagens/icones/icon-carrinho.svg"
+                                alt="Carrinho" /></a></button>
                 </article>
             </div>
         </section>
@@ -171,8 +179,9 @@
             </article>
             <!-- Produto 1 -->
             <div class="produtos flex-item flex-container">
-                <article class="flex-item">
-                    <div class="imagem-produto">
+                <article class="flex-item" onclick="TirarCarrinho5()" onmouseout="ColocarCarrinho5()">
+                    <div class="imagem-produto" id="produto5" onmouseover="TirarCarrinho5()"
+                        onmouseout="ColocarCarrinho5()">
                         <img src="imagens/tristana.png" alt="Tristana" />
                         <button class="detalhes"><a href="#"><strong>Ver detalhes</strong></a></button>
                     </div>
@@ -185,11 +194,13 @@
                     </div>
                     <p class="descricao">Mis Fortune Fliperama Tiro fofo</p>
                     <p class="preco"><strong>R$ 1,00</strong></p>
-                    <button><a href="#"><img src="imagens/icones/icon-carrinho.svg" alt="Carrinho" /></a></button>
+                    <button id="carrinho5"><a href="#"><img src="imagens/icones/icon-carrinho.svg"
+                                alt="Carrinho" /></a></button>
                 </article>
                 <!-- Produto 2 -->
-                <article class="flex-item">
-                    <div class="imagem-produto">
+                <article class="flex-item" onclick="TirarCarrinho6()" onmouseout="ColocarCarrinho6()">
+                    <div class="imagem-produto" id="produto6" onmouseover="TirarCarrinho6()"
+                        onmouseout="ColocarCarrinho6()">
                         <img src="imagens/miss-fortune.png" alt="Miss-Fortune" />
                         <button class="detalhes"><a href="#"><strong>Ver detalhes</strong></a></button>
                     </div>
@@ -202,11 +213,13 @@
                     </div>
                     <p class="descricao">Tristana do mal</p>
                     <p class="preco"><strong>R$ 1,00</strong></p>
-                    <button><a href="#"><img src="imagens/icones/icon-carrinho.svg" alt="Carrinho" /></a></button>
+                    <button id="carrinho6"><a href="#"><img src="imagens/icones/icon-carrinho.svg"
+                                alt="Carrinho" /></a></button>
                 </article>
                 <!-- Produto 3 -->
-                <article class="flex-item">
-                    <div class="imagem-produto">
+                <article class="flex-item" onclick="TirarCarrinho7()" onmouseout="ColocarCarrinho7()">
+                    <div class="imagem-produto" id="produto7" onmouseover="TirarCarrinho7()"
+                        onmouseout="ColocarCarrinho7()">
                         <img src="imagens/vayne.png" alt="Vayne" />
                         <button class="detalhes"><a href="#"><strong>Ver detalhes</strong></a></button>
                     </div>
@@ -219,11 +232,13 @@
                     </div>
                     <p class="descricao">Vayne morgeco de batalha</p>
                     <p class="preco"><strong>R$ 1,00</strong></p>
-                    <button><a href="#"><img src="imagens/icones/icon-carrinho.svg" alt="Carrinho" /></a></button>
+                    <button id="carrinho7"><a href="#"><img src="imagens/icones/icon-carrinho.svg"
+                                alt="Carrinho" /></a></button>
                 </article>
                 <!-- Produto 4 -->
-                <article class="flex-item">
-                    <div class="imagem-produto">
+                <article class="flex-item" onclick="TirarCarrinho8()" onmouseout="ColocarCarrinho8()">
+                    <div class="imagem-produto" id="produto8" onmouseover="TirarCarrinho8()"
+                        onmouseout="ColocarCarrinho8()">
                         <img src="imagens/varus.png" alt="Varus" />
                         <button class="detalhes"><a href="#"><strong>Ver detalhes</strong></a></button>
                     </div>
@@ -236,7 +251,8 @@
                     </div>
                     <p class="descricao">Varus caçador cósmico - Flechada</p>
                     <p class="preco"><strong>R$ 1,00</strong></p>
-                    <button><a href="#"><img src="imagens/icones/icon-carrinho.svg" alt="Carrinho" /></a></button>
+                    <button id="carrinho8"><a href="#"><img src="imagens/icones/icon-carrinho.svg"
+                                alt="Carrinho" /></a></button>
                 </article>
             </div>
         </section>

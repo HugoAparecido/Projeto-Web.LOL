@@ -223,6 +223,10 @@ section .produtos article:hover {
     background-color: rgba(116, 3, 3, 0.05);
 }
 
+section .produtos article:active>button {
+    display: none;
+}
+
 section article .imagem-produto {
     width: 100%;
     position: relative;
@@ -354,7 +358,8 @@ footer p small {
         display: block;
         width: 100%;
     }
-/* Exibição de conteúdos escondidos */
+
+    /* Exibição de conteúdos escondidos */
     nav .link-pagina-nav-li.ativo {
         width: 100vw;
         display: block;
