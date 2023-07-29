@@ -119,8 +119,7 @@ header>nav>ul>li>.perfil {
     list-style: none;
     gap: 10px;
 }
-
-header>nav>ul>li>.perfil>li>.botao-pesquisar-responsivo {
+.botao-pesquisar-responsivo {
     display: none;
 }
 
@@ -381,22 +380,22 @@ footer p small {
         border-bottom: 3px solid black;
     }
 
-    .form-li.ativo {
-        top: 80px;
-        display: block;
-        width: 100%;
-        position: absolute;
-    }
-
-    header>nav>ul>li>.perfil .botao-pesquisar-responsivo {
+    header .perfil .botao-pesquisar-responsivo {
         cursor: pointer;
-        display: block;
+        display: inline;
         border: 0;
         width: 40px;
         height: 40px;
         background-color: #740303;
         box-shadow: 0px 10px 15px 0px #E851284D;
         border-radius: 100%;
+    }
+
+    .form-li.ativo {
+        top: 80px;
+        display: block;
+        width: 100%;
+        position: absolute;
     }
 
     .botao-pesquisar-responsivo img {
@@ -408,7 +407,7 @@ footer p small {
     }
 
     /* section */
-    section {
+    main>section {
         flex-wrap: wrap;
         justify-content: flex-start;
         padding: 0;
